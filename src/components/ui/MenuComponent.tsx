@@ -1,5 +1,5 @@
 "use client";
-import { link } from "fs";
+
 import React from "react";
 import Button from "./Button";
 import { MoveRightIcon } from "lucide-react";
@@ -7,23 +7,23 @@ import Link from "next/link";
 const links = [
   {
     title: "Services",
-    path: "/services",
+    path: "#services",
   },
   {
     title: "Work",
-    path: "/work",
+    path: "#work",
   },
   {
     title: "About",
-    path: "/about",
+    path: "#about",
   },
   {
     title: "Reviews",
-    path: "/reviews",
+    path: "#testimonials",
   },
   {
     title: "Contact",
-    path: "/contact",
+    path: "#contact",
   },
 ];
 
@@ -39,11 +39,13 @@ const MenuComponent = ({ className }: any) => {
           </li>
         </ul>
       ))}
-      <Button
-        text="Hire me"
-        className="bg-[#FF6B2B] px-6 py-2 gap-2"
-        comp={<MoveRightIcon className="text-white" size={20} />}
-      />
+      <Link href="#contact">
+        <Button
+          text="Hire me"
+          className="bg-[#FF6B2B] px-6 py-2 gap-2"
+          comp={<MoveRightIcon className="text-white" size={20} />}
+        />
+      </Link>
     </div>
   );
 };

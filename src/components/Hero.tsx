@@ -32,14 +32,14 @@ const Hero = () => {
             fast, clean, and accessible.
           </p>
           <div className="reveal d3 flex flex-wrap gap-4 in">
-            <Link href="/work">
+            <Link href="#work">
               <Button
                 className="px-10 py-3 bg-white text-black rounded-full cursor-pointer gap-1"
                 text="View my work"
                 comp={<ChevronDown className="w-4 h-4" />}
               />
             </Link>
-            <Link href="/contact">
+            <Link href="#contact">
               <Button
                 className="px-10 py-3 bg-black text-white border border-white rounded-full cursor-pointer gap-1"
                 text="Get in Touch"

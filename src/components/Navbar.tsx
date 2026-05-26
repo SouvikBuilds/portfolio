@@ -75,11 +75,13 @@ const Navbar = () => {
             </div>
           )}
           <div>
-            <Button
-              text="Hire me"
-              className="bg-[#FF6B2B] hidden md:flex px-6 py-2 gap-2"
-              comp={<MoveRightIcon className="text-white" size={20} />}
-            />
+            <Link href="#contact">
+              <Button
+                text="Hire me"
+                className="bg-[#FF6B2B] hidden md:flex px-6 py-2 gap-2"
+                comp={<MoveRightIcon className="text-white" size={20} />}
+              />
+            </Link>
           </div>
         </div>
       </div>
