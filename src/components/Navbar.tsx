@@ -42,7 +42,7 @@ const Navbar = () => {
       <div className="max-w-6xl w-full mx-auto px-6 h-16 flex items-center justify-between">
         <div className="logo">
           <Link
-            href={"#hero"}
+            href="#"
             className="font-display font-bold text-xl tracking-tight relative z-10"
           >
             <span className="text-zinc-900 dark:text-white font-bold">
