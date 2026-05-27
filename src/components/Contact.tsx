@@ -11,7 +11,7 @@ const Contact = () => {
             aria-hidden="true"
           ></div>
           <div
-            className="absolute bottom-0 left-0 w-40 h-40 bg-accent/10 rounded-full blur-2xl pointer-events-none"
+            className="absolute bottom-0 left-0 w-40 h-40 bg-orange-500/10 rounded-full blur-2xl pointer-events-none"
             aria-hidden="true"
           ></div>
 
