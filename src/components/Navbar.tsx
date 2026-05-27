@@ -44,7 +44,7 @@ const Navbar = () => {
           href="#"
           className="font-display font-bold text-xl tracking-tight relative z-10"
         >
-          <div className="logo">
+          <div className="logo pointer-events-none">
             <span className="text-zinc-900 dark:text-white font-bold">
               Souvik
             </span>
