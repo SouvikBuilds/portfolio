@@ -4,9 +4,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="border-t bg-black dark:border-zinc-900">
+    <footer className="border-t bg-[#FFFFFE] dark:bg-black border-[#F9F8F9] dark:border-zinc-900">
       <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-zinc-400">
+        <p className="text-sm text-[#ABABB3]">
           © <span id="year"></span> SouvikBuilds. All rights reserved. <br />
           Developed by{" "}
           <Link
@@ -17,7 +17,7 @@ const Footer = () => {
             Souvik Chatterjee
           </Link>{" "}
         </p>
-        <p className="text-xs text-zinc-500">
+        <p className="text-xs text-[#ABABB3]">
           Built with{" "}
           <Link
             href="https://tailwindcss.com"
