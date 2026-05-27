@@ -40,17 +40,17 @@ const Navbar = () => {
   return (
     <div className="relative z-10 flex flex-col">
       <div className="max-w-6xl w-full mx-auto px-6 h-16 flex items-center justify-between">
-        <div className="logo">
-          <Link
-            href="#"
-            className="font-display font-bold text-xl tracking-tight relative z-10"
-          >
+        <Link
+          href="#"
+          className="font-display font-bold text-xl tracking-tight relative z-10"
+        >
+          <div className="logo">
             <span className="text-zinc-900 dark:text-white font-bold">
               Souvik
             </span>
             <span className="text-orange-500 font-bold">Builds</span>
-          </Link>
-        </div>
+          </div>
+        </Link>
 
         <div className="links">
           <ul className="hidden md:flex items-center gap-8 text-sm">
@@ -67,18 +67,18 @@ const Navbar = () => {
         <div className="flex items-center gap-4">
           {open ? (
             <div className="cursor-pointer md:hidden " onClick={handleClose}>
-              <X size={30} className="text-white" />
+              <X size={30} className="text-zinc-900 dark:text-white" />
             </div>
           ) : (
             <div className="cursor-pointer md:hidden " onClick={handleOpen}>
-              <Menu size={30} className="text-white" />
+              <Menu size={30} className="text-zinc-900 dark:text-white" />
             </div>
           )}
           <div>
             <Link href="#contact">
               <Button
                 text="Hire me"
-                className="bg-[#FF6B2B] hidden md:flex px-6 py-2 gap-2"
+                className="bg-[#FF6B2B] text-white  hidden md:flex px-6 py-2 gap-2"
                 comp={<MoveRightIcon className="text-white" size={20} />}
               />
             </Link>

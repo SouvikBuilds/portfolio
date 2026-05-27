@@ -69,20 +69,22 @@ const Services = () => {
             <article
               key={card.id}
               className={`
-                card-h group rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800
+                card-h group cursor-pointer rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800
                 transition-all duration-600 ease-in-out
                 ${card.delay}
                 hover:-translate-y-3 hover:duration-200 hover:ease-out
                 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6.5"}
-                ${card.id === 2 ? "bg-[#28282B] hover:border-orange-500 -translate-y-7" : "bg-zinc-900"}
+                ${card.id === 2 ? "dark:bg-[#28282B] bg-[#1A1A1D] hover:border-orange-500 -translate-y-7" : "dark:bg-zinc-900 bg-[#FFFEFF]"}
               `}
             >
               <div
-                className={`w-12 h-12 flex items-center justify-center ${card.id === 2 ? "bg-[#414047]" : "bg-[#29292C]"} rounded-xl mb-6 group-hover:bg-orange-500/10 transition-colors `}
+                className={`w-12 h-12 flex items-center justify-center ${card.id === 2 ? "bg-[#414047]" : "dark:bg-[#29292C] bg-[#FEF5ED]"} rounded-xl mb-6 group-hover:bg-orange-500/10 transition-colors `}
               >
                 {card.icon}
               </div>
-              <h3 className="font-display font-bold text-xl text-zinc-900 dark:text-white mb-3">
+              <h3
+                className={`font-display font-bold text-xl ${card.id === 2 ? "text-white" : "text-[#1A1A1D] dark:text-white"} mb-3`}
+              >
                 {card.title}
               </h3>
               <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">

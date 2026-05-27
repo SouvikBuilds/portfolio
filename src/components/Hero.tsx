@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="reveal d3 flex flex-wrap gap-4 in">
             <Link href="#work">
               <Button
-                className="px-10 py-3 bg-white text-black rounded-full cursor-pointer gap-1"
+                className="px-10 py-3 bg-orange-500 dark:bg-white text-white dark:text-black rounded-full cursor-pointer gap-1"
                 text="View my work"
                 comp={<ChevronDown className="w-4 h-4" />}
               />

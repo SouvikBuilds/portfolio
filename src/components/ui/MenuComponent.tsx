@@ -34,7 +34,7 @@ const MenuComponent = ({ className }: any) => {
     >
       {links.map((link, index) => (
         <ul key={index} className="p-1 rounded-lg">
-          <li className="text-white active:text-orange-500 w-full rounded-lg focus:ring-orange-400 cursor-pointer">
+          <li className="text-zinc-900 dark:text-white active:text-orange-500 w-full rounded-lg focus:ring-orange-400 cursor-pointer">
             <Link href={link.path}>{link.title}</Link>
           </li>
         </ul>
@@ -42,7 +42,7 @@ const MenuComponent = ({ className }: any) => {
       <Link href="#contact">
         <Button
           text="Hire me"
-          className="bg-[#FF6B2B] px-6 py-2 gap-2"
+          className="bg-[#FF6B2B] text-white px-6 py-2 gap-2"
           comp={<MoveRightIcon className="text-white" size={20} />}
         />
       </Link>
